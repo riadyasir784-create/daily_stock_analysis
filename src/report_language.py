@@ -52,14 +52,14 @@ _OPERATION_ADVICE_CANONICAL_MAP = {
     "strong_sell": "strong_sell",
 }
 
-_OPERATION_ADVICE_TRANSLATIONS = {
-    "strong_buy": {"zh": "强烈买入", "en": "Strong Buy"},
-    "buy": {"zh": "买入", "en": "Buy"},
-    "hold": {"zh": "持有", "en": "Hold"},
-    "watch": {"zh": "观望", "en": "Watch"},
-    "reduce": {"zh": "减仓", "en": "Reduce"},
-    "sell": {"zh": "卖出", "en": "Sell"},
-    "strong_sell": {"zh": "强烈卖出", "en": "Strong Sell"},
+_OPERATION_ADVICE_TRANSLATIONS = _OPERATION_ADVICE_TRANSLATIONS = {
+    "strong_buy": {"zh": "强烈买入", "en": "Strong Buy", "it": "Forte Acquisto"},
+    "buy": {"zh": "买入", "en": "Buy", "it": "Compra"},
+    "hold": {"zh": "持有", "en": "Hold", "it": "Mantieni"},
+    "watch": {"zh": "观望", "en": "Watch", "it": "Osserva"},
+    "reduce": {"zh": "减仓", "en": "Reduce", "it": "Riduci"},
+    "sell": {"zh": "卖出", "en": "Sell", "it": "Vendi"},
+    "strong_sell": {"zh": "强烈卖出", "en": "Strong Sell", "it": "Forte Vendita"},
 }
 
 _TREND_PREDICTION_CANONICAL_MAP = {
@@ -82,11 +82,11 @@ _TREND_PREDICTION_CANONICAL_MAP = {
 }
 
 _TREND_PREDICTION_TRANSLATIONS = {
-    "strong_bullish": {"zh": "强烈看多", "en": "Strong Bullish"},
-    "bullish": {"zh": "看多", "en": "Bullish"},
-    "sideways": {"zh": "震荡", "en": "Sideways"},
-    "bearish": {"zh": "看空", "en": "Bearish"},
-    "strong_bearish": {"zh": "强烈看空", "en": "Strong Bearish"},
+    "strong_bullish": {"zh": "强烈看多", "en": "Strong Bullish", "it": "Fortemente Rialzista"},
+    "bullish": {"zh": "看多", "en": "Bullish", "it": "Rialzista"},
+    "sideways": {"zh": "震荡", "en": "Sideways", "it": "Laterale/Stabile"},
+    "bearish": {"zh": "看空", "en": "Bearish", "it": "Ribassista"},
+    "strong_bearish": {"zh": "强烈看空", "en": "Strong Bearish", "it": "Fortemente Ribassista"},
 }
 
 _CONFIDENCE_LEVEL_CANONICAL_MAP = {
@@ -100,9 +100,9 @@ _CONFIDENCE_LEVEL_CANONICAL_MAP = {
 }
 
 _CONFIDENCE_LEVEL_TRANSLATIONS = {
-    "high": {"zh": "高", "en": "High"},
-    "medium": {"zh": "中", "en": "Medium"},
-    "low": {"zh": "低", "en": "Low"},
+    "high": {"zh": "高", "en": "High", "it": "Alta"},
+    "medium": {"zh": "中", "en": "Medium", "it": "Media"},
+    "low": {"zh": "低", "en": "Low", "it": "Bassa"},
 }
 
 _CHIP_HEALTH_CANONICAL_MAP = {
@@ -115,9 +115,9 @@ _CHIP_HEALTH_CANONICAL_MAP = {
 }
 
 _CHIP_HEALTH_TRANSLATIONS = {
-    "healthy": {"zh": "健康", "en": "Healthy"},
-    "average": {"zh": "一般", "en": "Average"},
-    "caution": {"zh": "警惕", "en": "Caution"},
+    "healthy": {"zh": "健康", "en": "Healthy", "it": "Sana"},
+    "average": {"zh": "一般", "en": "Average", "it": "Neutrale"},
+    "caution": {"zh": "警惕", "en": "Caution", "it": "Attenzione"},
 }
 
 _BIAS_STATUS_CANONICAL_MAP = {
@@ -132,9 +132,9 @@ _BIAS_STATUS_CANONICAL_MAP = {
 }
 
 _BIAS_STATUS_TRANSLATIONS = {
-    "safe": {"zh": "安全", "en": "Safe"},
-    "caution": {"zh": "警戒", "en": "Caution"},
-    "danger": {"zh": "危险", "en": "Danger"},
+    "safe": {"zh": "安全", "en": "Safe", "it": "Sicuro"},
+    "caution": {"zh": "警戒", "en": "Caution", "it": "Attenzione"},
+    "danger": {"zh": "危险", "en": "Danger", "it": "Pericolo"},
 }
 
 _PLACEHOLDER_BY_LANGUAGE = {
@@ -317,6 +317,86 @@ _REPORT_LABELS: Dict[str, Dict[str, str]] = {
         "analysis_model_label": "Model",
         "not_investment_advice": "AI-generated content for reference only. Not investment advice.",
         "details_report_hint": "See detailed report:",
+    },
+    "it": {
+        "dashboard_title": "Dashboard Decisionale",
+        "brief_title": "Sintesi Decisionale",
+        "analyzed_prefix": "Analizzati",
+        "stock_unit": "titoli",
+        "stock_unit_compact": "titoli",
+        "buy_label": "Compra",
+        "watch_label": "Osserva",
+        "sell_label": "Vendi",
+        "summary_heading": "Analisi dei Risultati",
+        "info_heading": "Aggiornamenti Chiave",
+        "sentiment_summary_label": "Sentiment",
+        "earnings_outlook_label": "Prospettiva Utili",
+        "risk_alerts_label": "Allerta Rischi",
+        "positive_catalysts_label": "Catalizzatori Positivi",
+        "latest_news_label": "Ultime Notizie",
+        "core_conclusion_heading": "Conclusione Principale",
+        "one_sentence_label": "Decisione in sintesi",
+        "time_sensitivity_label": "Orizzonte Temporale",
+        "default_time_sensitivity": "Questa settimana",
+        "position_status_label": "Posizione",
+        "action_advice_label": "Azione Consigliata",
+        "no_position_label": "Senza Posizione",
+        "has_position_label": "In Posizione",
+        "continue_holding": "Continua a detenere",
+        "market_snapshot_heading": "Snapshot di Mercato",
+        "close_label": "Chiusura",
+        "prev_close_label": "Chiusura Prec.",
+        "open_label": "Apertura",
+        "high_label": "Massimo",
+        "low_label": "Minimo",
+        "change_pct_label": "Variazione %",
+        "change_amount_label": "Variazione",
+        "amplitude_label": "Ampiezza",
+        "volume_label": "Volume",
+        "amount_label": "Controvalore",
+        "current_price_label": "Prezzo Attuale",
+        "volume_ratio_label": "Ratio Volume",
+        "turnover_rate_label": "Tasso Rotazione",
+        "source_label": "Fonte Dati",
+        "data_perspective_heading": "Analisi Dati",
+        "ma_alignment_label": "Allineamento Medie",
+        "bullish_alignment_label": "Allineamento Rialzista",
+        "yes_label": "Sì",
+        "no_label": "No",
+        "trend_strength_label": "Forza del Trend",
+        "price_metrics_label": "Metriche di Prezzo",
+        "ma5_label": "MA5",
+        "ma10_label": "MA10",
+        "ma20_label": "MA20",
+        "bias_ma5_label": "Bias (MA5)",
+        "support_level_label": "Supporto",
+        "resistance_level_label": "Resistenza",
+        "chip_label": "Struttura Volumi",
+        "battle_plan_heading": "Piano Operativo",
+        "ideal_buy_label": "Ingresso Ideale",
+        "secondary_buy_label": "Ingresso Secondario",
+        "stop_loss_label": "Stop Loss",
+        "take_profit_label": "Target (TP)",
+        "suggested_position_label": "Size Posizione",
+        "entry_plan_label": "Piano d'Ingresso",
+        "risk_control_label": "Gestione Rischio",
+        "checklist_heading": "Checklist",
+        "failed_checks_heading": "Controlli Falliti",
+        "history_compare_heading": "Confronto Segnali Storici",
+        "time_label": "Tempo",
+        "score_label": "Punteggio",
+        "advice_label": "Consiglio",
+        "trend_label": "Trend",
+        "generated_at_label": "Report Generato il",
+        "report_time_label": "Ora Generazione",
+        "no_results": "Nessun risultato",
+        "report_title": "Report Analisi Titoli",
+        "avg_score_label": "Score Medio",
+        "action_points_heading": "Livelli Operativi",
+        "position_advice_heading": "Consiglio Posizione",
+        "analysis_model_label": "Modello IA",
+        "not_investment_advice": "AI: Solo per riferimento, non costituisce consulenza finanziaria.",
+        "details_report_hint": "Vedi report dettagliato:",
     },
 }
 
