@@ -6,9 +6,12 @@ from __future__ import annotations
 import re
 from typing import Any, Dict, Optional
 
-SUPPORTED_REPORT_LANGUAGES = ("zh", "en")
+SUPPORTED_REPORT_LANGUAGES = ("zh", "en","it")
 
 _REPORT_LANGUAGE_ALIASES = {
+    "it": "it",
+    "italian": "it",
+    "italiano": "it",
     "zh-cn": "zh",
     "zh_cn": "zh",
     "zh-hans": "zh",
